@@ -1,24 +1,30 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HFWS4RGRGB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFWS4RGRGB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js');
+        gtag('config', 'G-HFWS4RGRGB');
+    </script>
 
-  gtag('config', 'G-HFWS4RGRGB');
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | Burt</title>
 
-<title>About | Burt</title>
+    <meta
+        name="description"
+        content="Submit requests, report bugs, join the Burt team, or get help."
+    >
 
-<link rel="stylesheet" href="/assets/css/style.css">
-<script defer src="/assets/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script defer src="/assets/js/script.js"></script>
 
 </head>
 
@@ -26,19 +32,243 @@
 
 <div id="navbar"></div>
 
-<section class="hero">
 
-<div class="hero-text">
+<section class="forms-page">
 
-    <h1>About Us</h1>
+    <aside class="forms-sidebar">
 
-    <p>Our writing team is working on this.</p>
+        <h2>Forms</h2>
 
-</div>
+        <button class="sidebar-btn active" data-category="all">
+            All Forms
+        </button>
+
+        <button class="sidebar-btn" data-category="faq">
+            Help & FAQ
+        </button>
+
+        <button class="sidebar-btn" data-category="bugs">
+            Bug Reports
+        </button>
+
+        <button class="sidebar-btn" data-category="team">
+            Join Burt
+        </button>
+
+        <button class="sidebar-btn" data-category="other">
+            Other
+        </button>
+
+    </aside>
+
+
+    <main class="forms-content">
+
+        <div class="forms-top">
+
+            <div>
+
+                <h1>What do you need?</h1>
+
+                <p>
+                    Find a form for requests, questions, opportunities,
+                    and everything else Burt-related.
+                </p>
+
+            </div>
+
+            <input
+                type="text"
+                class="forms-search"
+                placeholder="Search forms..."
+                aria-label="Search forms"
+            >
+
+        </div>
+
+
+        <div class="forms-grid">
+
+
+            <div class="form-card" data-category="other">
+
+                <div class="status open"></div>
+
+                <h3>Request Something</h3>
+
+                <p>
+                    Want Burt to make something for you?
+                    Start a project request here.
+                </p>
+
+                <button onclick="location.href='/order/checkout/'">
+                    Open Form
+                </button>
+
+            </div>
+
+
+            <div class="form-card" data-category="team">
+
+                <div class="status open"></div>
+
+                <h3>Join Our Team</h3>
+
+                <p>
+                    Have a skill, idea, or interest you'd like
+                    to bring to Burt?
+                </p>
+
+                <button onclick="location.href='/earn/'">
+                    Open Form
+                </button>
+
+            </div>
+
+
+            <div class="form-card" data-category="bugs">
+
+                <div class="status open"></div>
+
+                <h3>Report a Bug</h3>
+
+                <p>
+                    Found something broken or behaving strangely?
+                    Let us know.
+                </p>
+
+                <button onclick="location.href='/contact/'">
+                    Open Form
+                </button>
+
+            </div>
+
+
+            <div class="form-card" data-category="faq">
+
+                <div class="status open"></div>
+
+                <h3>Ask a Question</h3>
+
+                <p>
+                    Can't find what you're looking for?
+                    Send us a question and we'll point you in the right direction.
+                </p>
+
+                <button onclick="location.href='/contact/'">
+                    Open Form
+                </button>
+
+            </div>
+
+
+            <div class="form-card" data-category="other">
+
+                <div class="status open"></div>
+
+                <h3>Advertise With Burt</h3>
+
+                <p>
+                    Interested in advertising, promotion,
+                    or working with Burt on a campaign?
+                </p>
+
+                <button onclick="location.href='/advertise/'">
+                    Open Form
+                </button>
+
+            </div>
+
+
+            <div class="form-card" data-category="other">
+
+                <div class="status open"></div>
+
+                <h3>Something Else</h3>
+
+                <p>
+                    Collaboration, freelance opportunities,
+                    ideas, or anything that doesn't fit elsewhere.
+                </p>
+
+                <button onclick="location.href='/contact/'">
+                    Open Form
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </main>
 
 </section>
 
+
 <div id="footer"></div>
+
+
+<script>
+
+const buttons = document.querySelectorAll(".sidebar-btn");
+const cards = document.querySelectorAll(".form-card");
+const search = document.querySelector(".forms-search");
+
+
+function filterForms(category) {
+
+    cards.forEach(card => {
+
+        const cardCategory = card.dataset.category;
+
+        if (
+            category === "all" ||
+            cardCategory === category
+        ) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+}
+
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        filterForms(button.dataset.category);
+
+    });
+
+});
+
+
+search.addEventListener("input", () => {
+
+    const query = search.value.toLowerCase().trim();
+
+    cards.forEach(card => {
+
+        const text = card.textContent.toLowerCase();
+
+        card.style.display =
+            text.includes(query) ? "" : "none";
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>
+```
