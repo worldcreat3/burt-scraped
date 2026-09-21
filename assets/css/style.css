@@ -1706,3 +1706,953 @@ footer p a {
     }
 
 }
+
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+
+/* Small uppercase labels */
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--light-blue);
+    margin-bottom: 15px;
+}
+
+
+/* Services introduction */
+
+.order-intro {
+    max-width: 750px;
+    margin: 20px auto 35px !important;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* Free banner */
+
+.free-banner {
+    max-width: 850px;
+    margin: 0 auto 60px;
+
+    padding: 20px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    background: #eef8fc;
+
+    border: 1px solid #c9eaf5;
+    border-radius: 12px;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+.free-banner strong {
+    color: var(--navy);
+}
+
+.free-banner span {
+    color: #666;
+}
+
+
+/* Services section heading */
+
+.order-section-title {
+    color: var(--navy);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* Featured service */
+
+.order-card.featured {
+    border: 2px solid var(--navy);
+    position: relative;
+}
+
+.card-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    background: var(--navy);
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Why Burt */
+
+.why-section {
+    padding: 100px 20px;
+
+    background: var(--navy);
+
+    color: white;
+}
+
+.why-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.why-content .eyebrow {
+    color: #8fd5ef;
+}
+
+.why-content h2 {
+    color: white;
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+.why-content p {
+    color: rgba(255, 255, 255, .82);
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Freelance section */
+
+.freelance-section {
+    padding: 100px 20px;
+
+    background: white;
+}
+
+.freelance-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.freelance-content h2 {
+    color: var(--navy);
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    margin-bottom: 25px;
+}
+
+.freelance-content p {
+    max-width: 720px;
+
+    margin: 0 auto 20px;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+.freelance-content button {
+    margin-top: 15px;
+}
+
+
+/* How it works */
+
+.how-section {
+    padding: 90px 8%;
+
+    background: var(--grey);
+
+    text-align: center;
+}
+
+.how-section > h2 {
+    color: var(--navy);
+
+    font-size: 40px;
+
+    margin-bottom: 45px;
+}
+
+.how-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.how-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .07);
+
+    text-align: left;
+
+    transition: .3s ease;
+}
+
+.how-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .10);
+}
+
+.how-card > span {
+    display: block;
+
+    color: var(--light-blue);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.how-card h3 {
+    color: var(--navy);
+
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+.how-card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* Why is it free? */
+
+.limited-section {
+    padding: 100px 20px;
+
+    background: white;
+}
+
+.limited-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.limited-content h2 {
+    color: var(--navy);
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    margin-bottom: 25px;
+}
+
+.limited-content p {
+    max-width: 720px;
+
+    margin: 0 auto 20px;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+.limited-content button {
+    margin-top: 15px;
+}
+
+
+/* Join the team CTA */
+
+.freelancer-cta {
+    padding: 100px 20px;
+
+    background: #eef4ff;
+
+    text-align: center;
+}
+
+.freelancer-cta h2 {
+    color: var(--navy);
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    margin-bottom: 20px;
+}
+
+.freelancer-cta > p:not(.eyebrow) {
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    color: #666;
+
+    line-height: 1.7;
+
+    font-size: 17px;
+}
+
+
+/* Shared final CTA */
+
+.final-cta {
+    padding: 100px 20px;
+
+    background: var(--navy);
+
+    color: white;
+
+    text-align: center;
+}
+
+.final-cta h2 {
+    color: white;
+
+    font-size: clamp(34px, 5vw, 50px);
+
+    margin-bottom: 15px;
+}
+
+.final-cta p {
+    color: rgba(255, 255, 255, .8);
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   ADVERTISING PAGE
+========================================= */
+
+
+/* Advertising hero */
+
+.advertising-hero {
+    background:
+        linear-gradient(
+            135deg,
+            var(--grey) 0%,
+            #eaf5fa 100%
+        );
+}
+
+.advertising-hero h1 {
+    max-width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advertising-hero h1 i {
+    color: var(--light-blue);
+
+    font-style: normal;
+}
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+.hero-buttons button {
+    min-width: 180px;
+}
+
+.secondary-button {
+    background: white;
+
+    color: var(--navy);
+
+    border: 2px solid var(--navy);
+}
+
+.secondary-button:hover {
+    background: var(--navy);
+
+    color: white;
+}
+
+.hero-small {
+    font-size: 14px !important;
+
+    color: #888 !important;
+
+    margin-top: 18px !important;
+
+    margin-bottom: 0 !important;
+}
+
+
+/* Advertising trial banner */
+
+.ad-banner {
+    padding: 30px 8%;
+
+    background: var(--navy);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.ad-banner strong {
+    display: block;
+
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+.ad-banner p {
+    color: rgba(255, 255, 255, .75);
+
+    margin: 0;
+
+    line-height: 1.5;
+}
+
+.ad-banner button {
+    flex-shrink: 0;
+
+    background: white;
+
+    color: var(--navy);
+
+    padding: 12px 24px;
+}
+
+.ad-banner button:hover {
+    background: var(--light-blue);
+
+    color: white;
+}
+
+
+/* Main advertising section */
+
+.advertising-section {
+    padding: 100px 8%;
+
+    background: white;
+
+    text-align: center;
+}
+
+.advertising-section > h2 {
+    max-width: 850px;
+
+    margin: 0 auto 20px;
+
+    color: var(--navy);
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.15;
+}
+
+.section-intro {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* Advertising cards */
+
+.advertising-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    text-align: left;
+}
+
+.advertising-card {
+    padding: 30px;
+
+    background: var(--grey);
+
+    border-radius: 16px;
+
+    border: 1px solid transparent;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.advertising-card:hover {
+    transform: translateY(-6px);
+
+    background: white;
+
+    border-color: #ddd;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.advertising-card > span {
+    display: block;
+
+    color: var(--light-blue);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+.advertising-card h3 {
+    color: var(--navy);
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.advertising-card p {
+    color: #666;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* Burt approach */
+
+.advertising-philosophy {
+    padding: 100px 20px;
+
+    background: var(--navy);
+
+    color: white;
+}
+
+.philosophy-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.philosophy-content .eyebrow {
+    color: #8fd5ef;
+}
+
+.philosophy-content h2 {
+    color: white;
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.15;
+
+    margin-bottom: 30px;
+}
+
+.philosophy-content p {
+    color: rgba(255, 255, 255, .82);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* Audience */
+
+.audience-section {
+    padding: 100px 8%;
+
+    background: var(--grey);
+
+    text-align: center;
+}
+
+.audience-section > h2 {
+    max-width: 800px;
+
+    margin: 0 auto 50px;
+
+    color: var(--navy);
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.15;
+}
+
+.audience-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+.audience-grid > div {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .06);
+}
+
+.audience-grid h3 {
+    color: var(--navy);
+
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+.audience-grid p {
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* Free trial */
+
+.trial-section {
+    padding: 110px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf7fb,
+            var(--grey)
+        );
+
+    text-align: center;
+}
+
+.trial-content {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.trial-content h2 {
+    color: var(--navy);
+
+    font-size: clamp(34px, 5vw, 50px);
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+.trial-content p {
+    max-width: 720px;
+
+    margin: 0 auto 20px;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.trial-content button {
+    margin-top: 15px;
+}
+
+
+/* Advertising process */
+
+.advertising-process {
+    padding: 90px 8%;
+
+    background: white;
+
+    text-align: center;
+}
+
+.advertising-process > h2 {
+    color: var(--navy);
+
+    font-size: 40px;
+
+    margin-bottom: 45px;
+}
+
+.process-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.process-card {
+    padding: 30px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 16px;
+
+    text-align: left;
+
+    transition: .3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.process-card > span {
+    display: block;
+
+    color: var(--light-blue);
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.process-card h3 {
+    color: var(--navy);
+
+    margin-bottom: 12px;
+}
+
+.process-card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* Experimental note */
+
+.advertising-note {
+    padding: 60px 20px;
+
+    background: #f8f8f8;
+
+    text-align: center;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+.advertising-note h2 {
+    color: var(--navy);
+
+    margin-bottom: 12px;
+}
+
+.advertising-note p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .how-grid,
+    .process-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .advertising-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .free-banner {
+        flex-direction: column;
+
+        text-align: center;
+
+        margin-bottom: 45px;
+    }
+
+    .why-section,
+    .freelance-section,
+    .limited-section,
+    .advertising-philosophy,
+    .trial-section,
+    .freelancer-cta {
+        padding: 75px 20px;
+    }
+
+    .how-section,
+    .advertising-section,
+    .audience-section,
+    .advertising-process {
+        padding: 70px 20px;
+    }
+
+    .how-grid,
+    .process-grid,
+    .advertising-grid,
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ad-banner {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    .ad-banner button {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-buttons button {
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .order-section-title {
+        font-size: 27px;
+    }
+
+    .how-card,
+    .advertising-card,
+    .process-card,
+    .audience-grid > div {
+        padding: 25px;
+    }
+
+    .free-banner {
+        padding: 18px;
+    }
+
+}
